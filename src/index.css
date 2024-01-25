@@ -2,3 +2,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-primary text-sm bg-background select-none
+    }
+    a {
+        @apply text-dark
+    }
+    img {
+        @apply block w-full
+    }
+    h1 {
+        @apply font-extrabold text-3xl
+    }
+    h2 {
+        @apply text-[1.4rem]
+    }
+    h3 {
+        @apply text-sm
+    }
+    h4 {
+        @apply text-[0.8rem]
+    }
+    small {
+        @apply text-xs
+    }
+    .profile-photo {
+        @apply w-12 h-12 rounded-[50%] overflow-hidden
+    }
+    .text-muted {
+        @apply text-dark-info
+    }
+    p {
+        @apply text-dark-variant
+    }
+    b {
+        @apply text-dark
+    }
+}
