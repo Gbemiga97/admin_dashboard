@@ -3,6 +3,8 @@ import { CiUser } from "react-icons/ci"
 import { IoReceiptOutline } from "react-icons/io5"
 import { MdOutlineInsights, MdOutlineInventory, MdReportGmailerrorred, MdAdd } from "react-icons/md";
 import { IoIosLogOut, IoMdSettings } from "react-icons/io";
+import { MdOutlineAnalytics, MdOutlineStackedLineChart } from "react-icons/md";
+import { FaChartSimple } from "react-icons/fa6";
 
 
 
@@ -55,8 +57,31 @@ const links = [
 ]
 
 
+const insights = [
+    {
+        icon: <MdOutlineAnalytics />,
+        title: 'Total Sales',
+        price: '25,024',
+        percentage: '81',
+    },
+    {
+        icon: <FaChartSimple />,
+        title: 'Total Expenses',
+        price: '14,160',
+        percentage: '62',
+    },
+    {
+        icon: <MdOutlineStackedLineChart />,
+        title: 'Total Income',
+        price: '10,864',
+        percentage: '44',
+    },
+]
+
+
 const data = {
-    links
+    links,
+    insights
 }
 
 

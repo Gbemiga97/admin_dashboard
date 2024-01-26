@@ -1,7 +1,8 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 @layer base {
     body {
@@ -40,4 +41,16 @@
     b {
         @apply text-dark
     }
+    .links .active {
+         @apply bg-light text-primary  ml-0 before:w-1.5 before:h-full before:bg-primary
+    }
+   .links a.active span {
+    @apply text-primary ml-[calc(1rem-3px)]
+   }
+   .links a {
+    @apply   transition-all 
+   }
+   .links a span {
+    @apply group-hover:ml-4 transition-all duration-300
+   }
 }
