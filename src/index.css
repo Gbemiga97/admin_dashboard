@@ -54,3 +54,23 @@
     @apply group-hover:ml-4 transition-all duration-300
    }
 }
+
+
+svg circle {
+    stroke-linecap: round;
+}
+
+.sales svg circle {
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+} 
+
+.expenses svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+} 
+.income svg circle {
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+} 
+

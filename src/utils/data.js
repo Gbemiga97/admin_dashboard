@@ -3,8 +3,7 @@ import { CiUser } from "react-icons/ci"
 import { IoReceiptOutline } from "react-icons/io5"
 import { MdOutlineInsights, MdOutlineInventory, MdReportGmailerrorred, MdAdd } from "react-icons/md";
 import { IoIosLogOut, IoMdSettings } from "react-icons/io";
-import { MdOutlineAnalytics, MdOutlineStackedLineChart } from "react-icons/md";
-import { FaChartSimple } from "react-icons/fa6";
+import { MdAnalytics, MdOutlineStackedLineChart, MdBarChart } from "react-icons/md";
 
 
 
@@ -59,29 +58,77 @@ const links = [
 
 const insights = [
     {
-        icon: <MdOutlineAnalytics />,
-        title: 'Total Sales',
+        icon: <MdAnalytics />,
+        iconColor: 'bg-primary' ,
+        title: 'sales',
         price: '25,024',
         percentage: '81',
     },
     {
-        icon: <FaChartSimple />,
-        title: 'Total Expenses',
+        icon: <MdBarChart />,
+        iconColor: 'bg-danger',
+        title: 'expenses',
         price: '14,160',
         percentage: '62',
     },
     {
         icon: <MdOutlineStackedLineChart />,
-        title: 'Total Income',
+        iconColor: 'bg-success',
+        title: 'income',
         price: '10,864',
         percentage: '44',
     },
 ]
 
 
+const orders = [
+    {
+        name: 'Foldable Mini',
+        number: '85631',
+        payment: 'Due',
+        status: 'pending',
+    },
+    {
+        name: 'LARVENDER KF102 Drone',
+        number: '363778',
+        payment: 'Refunded',
+        status: 'declined',
+    },
+    {
+        name: 'Ruko F11 Pro Drone',
+        number: '49347',
+        payment: 'Due',
+        status: 'pending',
+    },
+    {
+        name: 'Drone with Camera Drone',
+        number: '96996',
+        payment: 'Paid',
+        status: 'delivered',
+    },
+    {
+        name: 'GPS 4K Drone',
+        number: '22821',
+        payment: 'Paid',
+        status: 'delivered',
+    }, {
+        name: 'DJI Air 2S',
+        number: '81475',
+        payment: 'Due',
+        status: 'pending',
+    },
+    {
+        name: 'Lozenge Drone',
+        number: '00482',
+        payment: 'Paid',
+        status: 'delivered',
+    },
+]
+
 const data = {
     links,
-    insights
+    insights,
+    orders
 }
 
 
