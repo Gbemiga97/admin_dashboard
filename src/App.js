@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Customer, Dashboard, Sidebar } from "./components";
+import { Customer, Dashboard, RecentUpdates, Sidebar } from "./components";
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="customer" element={<Customer />} />
       </Routes>
+      <RecentUpdates />
       </BrowserRouter>
     </div>
   );
