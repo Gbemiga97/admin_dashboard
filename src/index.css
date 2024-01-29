@@ -18,10 +18,10 @@
         @apply font-extrabold text-3xl
     }
     h2 {
-        @apply text-[1.4rem]
+        @apply text-[1.4rem] font-bold
     }
     h3 {
-        @apply text-sm
+        @apply text-sm  font-semibold
     }
     h4 {
         @apply text-[0.8rem]
@@ -52,6 +52,12 @@
    }
    .links a span {
     @apply group-hover:ml-4 transition-all duration-300
+   }
+   .activeMode {
+    @apply bg-primary text-white rounded-md
+   }
+   .profilePic {
+    @apply w-12 h-12 rounded-full
    }
 }
 

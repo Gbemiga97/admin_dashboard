@@ -15,11 +15,11 @@ const Sidebar = () => {
   return (
    <aside className="h-screen">
     {/* sidebar top */}
-    <div className="flex items-center justify-between mt-6 ">
+    <div className="flex items-center justify-between mt-6">
         {/* logo */}
         <div className="flex items-center gap-x-3.5">
         <img src={images.Logo} alt="logo" className="w-8 h-8" />
-        <h2>EGA<span>TOR</span></h2>
+        <h2 className="hidden xl:flex">EGA<span className="text-danger">TOR</span></h2>
     </div>
     <div className="xl:hidden">
         <IoMdClose /> 
@@ -33,7 +33,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300 "> 
                 <BsGrid1X2Fill /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Dashboard</h3>
         </a>
         <a href="/" 
@@ -41,7 +41,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <CiUser /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Customers</h3>
         </a>
         <a href="/" 
@@ -49,7 +49,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <IoReceiptOutline /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Orders</h3>
         </a>
         <a href="/" 
@@ -57,7 +57,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <MdOutlineInsights /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Analytics</h3>
         </a>
         <a href="/" 
@@ -65,7 +65,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <HiOutlineEnvelope /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Message</h3>
             <span className="bg-danger text-white py-[2px] px-[10px] text-xs rounded ">
                 26</span>
@@ -75,7 +75,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <MdOutlineInventory /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Products</h3>
         </a>
         <a href="/" 
@@ -83,7 +83,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <MdReportGmailerrorred /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Reports</h3>
         </a>
         <a href="/" 
@@ -91,7 +91,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300" >
                 <IoMdSettings /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Settings</h3>
         </a>
         <a href="/" 
@@ -99,7 +99,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <MdAdd /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Add Products</h3>
         </a>
         <a href="/" 
@@ -107,7 +107,7 @@ const Sidebar = () => {
         >
             <span className="group-hover:ml-4 transition-all duration-300">
                 <IoIosLogOut /></span>
-            <h3 className="font-medium">
+            <h3 className="font-medium hidden xl:flex">
                 Logout</h3>
         </a>
     </div>
